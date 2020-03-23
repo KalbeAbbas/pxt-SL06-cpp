@@ -1190,7 +1190,8 @@ namespace SL06 {
     }
 
 	//% shim=sl06::readBytes
-    function wireReadDataBlock(reg: NumberFormat.UInt8BE, len: number): number[] {
+	//% block="test_block"
+    export function wireReadDataBlock(reg: NumberFormat.UInt8BE, len: number): number[] {
         let buff: number[] = []
 
         return buff
