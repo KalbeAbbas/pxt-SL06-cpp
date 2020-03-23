@@ -43,11 +43,13 @@ namespace sl06
 {
 	SL06 xSL06;
 	
+	uint8_t test_data[] = {1,2,3,4};
+	
 	//%
 	uint8_t* readBytes(uint8_t reg, int len)
 	{
 		xSL06.readBlockData(reg, len, xSL06.data);
-		return xSL06.data;
+		return test_data;
 		
 	}
 }
