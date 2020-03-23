@@ -1188,9 +1188,9 @@ namespace SL06 {
         let val: number = pins.i2cReadNumber(APDS9960_I2C_ADDR, NumberFormat.UInt8BE)
         return val
     }
-
-	//% shim=sl06::readBytes
-	//% block="test_block"
+	
+    //%block="test_block"
+    //%shim=sl06::readBytes
     export function wireReadDataBlock(reg: NumberFormat.UInt8BE, len: number): number[] {
         let buff: number[] = []
 
